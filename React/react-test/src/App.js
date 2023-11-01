@@ -1,18 +1,12 @@
-import Test from './components/test';
 import './App.css';
-import Variants from './components/link';
-
+import AppBarStyled from './layout/MainLayout/Header/AppBarStyled'
 
 
 const App = () => {
   return (
     <div className='App'>
-      <Test/>
       <div className='black-nav'>
-        <h1>css test</h1>
-        <div className='Vari'>
-          <Variants></Variants>
-        </div>
+          <AppBarStyled></AppBarStyled>
       </div>
     </div>
   );
