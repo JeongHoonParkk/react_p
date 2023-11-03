@@ -1,15 +1,17 @@
-import './App.css';
-import AppBarStyled from './layout/MainLayout/Header/AppBarStyled'
-
+import React, { useEffect, useState } from "react";
+import Timer from "./components/Timer";
 
 const App = () => {
+  const [showTimer, setShowTimer] = useState(false);
+  useEffect(() => {
+    console.log("앱 렌더됨");
+  }, []);
   return (
-    <div className='App'>
-      <div className='black-nav'>
-          <AppBarStyled></AppBarStyled>
-      </div>
+    <div>
+      {showTimer && <Timer />}
+      <button onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
     </div>
   );
-}
+};
 
 export default App;
