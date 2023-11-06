@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Timer from "./components/Timer";
+import AppBarStyled from "./layout/MainLayout/Header/AppBarStyled";
+import Sheet from "@mui/joy/Sheet";
+import PrimarySearchAppBar from "./components/notification";
 
 const App = () => {
-  const [showTimer, setShowTimer] = useState(false);
-  useEffect(() => {
-    console.log("앱 렌더됨");
-  }, []);
   return (
-    <div>
-      {showTimer && <Timer />}
-      <button onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
-    </div>
+    <>
+      <PrimarySearchAppBar></PrimarySearchAppBar>
+      <AppBarStyled></AppBarStyled>
+      <Sheet color="primary" variant="soft" sx={{ p: 100 }}></Sheet>
+    </>
   );
 };
-
 export default App;
