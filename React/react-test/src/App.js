@@ -1,12 +1,10 @@
-import AppBarStyled from "./layout/MainLayout/Header/AppBarStyled";
 import Sheet from "@mui/joy/Sheet";
-import PrimarySearchAppBar from "./components/notification";
+import AppBarStyled from "./layout/MainLayout/Header/AppBarStyled";
 
 const App = () => {
   return (
     <>
-      <PrimarySearchAppBar></PrimarySearchAppBar>
-      <AppBarStyled></AppBarStyled>
+      <AppBarStyled />
       <Sheet color="primary" variant="soft" sx={{ p: 100 }}></Sheet>
     </>
   );

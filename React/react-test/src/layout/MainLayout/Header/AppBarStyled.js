@@ -1,5 +1,7 @@
 import { AppBar, Toolbar } from "@mui/material";
 import Timer from "../../../components/CurrentTime/currentTime";
+import PrimarySearchAppBar from "../../../components/notification";
+import AccountMenu from "./HeaderContent/profile/profileTab";
 
 const AppBarStyled = () => {
   return (
@@ -14,6 +16,8 @@ const AppBarStyled = () => {
     >
       <Toolbar>
         <Timer />
+        <PrimarySearchAppBar></PrimarySearchAppBar>
+        <AccountMenu></AccountMenu>
       </Toolbar>
     </AppBar>
   );

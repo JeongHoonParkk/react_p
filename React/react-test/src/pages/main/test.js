@@ -1,4 +1,3 @@
-import AppBarStyled from "./layout/MainLayout/Header/AppBarStyled";
 import Sheet from "@mui/joy/Sheet";
 
 const test = () => {
